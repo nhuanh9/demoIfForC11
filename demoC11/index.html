@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<input type="text" id="dauVao">
+<button onclick="anDay()">Ấn</button>
+<button onclick="kiemTra()">Kiểm tra</button>
+<button onclick="tongChiaHetCho3()">Tổng chia hết cho 3</button>
+<p id="res"></p>
+<script>
+
+    function anDay() {
+        let inp = document.getElementById("dauVao").value;
+        let result = 0;
+        for (let i = 1; i <= inp; i++) {
+            result += i;
+        }
+        document.getElementById('res').innerHTML = result;
+    }
+
+    function kiemTra() {
+        let inp = document.getElementById("dauVao").value;
+        let result;
+        if (inp % 2 == 0) {
+            result = "Chẵn";
+        } else {
+            result = "Lẻ";
+        }
+        document.getElementById('res').innerHTML = result;
+    }
+
+    function tongChiaHetCho3() {
+        let inp = document.getElementById("dauVao").value;
+        let result = 0;
+        for (let i = 1; i <= inp; i++) {
+            if (i % 3 == 0) {
+                result = result + i;
+            }
+            document.getElementById('res').innerHTML = result;
+        }
+    }
+</script>
+
+<!--b1: làm giao diện
+b2: test nút = alert trong onclick
+b3: test nút = 1 function
+b3: test xem đã lấy được dữ liệu từ ô chưa (gán giá trị và biến và alert hoặc console log lên)-->
+</body>
+</html>
