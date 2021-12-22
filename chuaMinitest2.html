@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+// Câu 1
+function inTu1Den100() {
+    for (let i=1; i<=100; i++) {
+        document.write(i);
+    }
+}
+// Câu 2
+function inTu1DenThamSo(thamSo) {
+    for (let i=1; i<=thamSo; i++) {
+        document.write(i);
+    }
+}
+// Câu 3
+function traVeBinhPhuong(thamSo) {
+    // let kq;
+    // kq = thamSo*thamSo;
+    // return kq;
+    return thamSo*thamSo;
+}
+// Câu 4
+function traVeBinhPhuong(soT1, soT2) {
+    let kq;
+    kq = soT1*soT2;
+    return kq;
+}
+// Câu 5
+function tongMang(mang) {
+    let kq = 0;
+    for (let i=0; i<mang.length; i++) {
+        kq += mang[i];
+    }
+    return kq;
+}
+// Câu 6
+function demChan(mang) {
+    let kq = 0;
+    for (let i=0; i<mang.length; i++) {
+        if (mang[i]%2==0) {
+            kq +=1;
+        }
+    }
+    return kq;
+}
+// Câu 7
+function timViTri(mang, so) {
+    let kq = -1;
+    for (let i=0; i<mang.length; i++) {
+        if (mang[i]==so) {
+            kq = i;
+        }
+    }
+    return kq;
+}
+</script>
+</body>
+</html>
